@@ -2,6 +2,7 @@
 :root {
     --custom-blue: #0282f9;
     --custom-gray: #464646;
+    --custom-black: #1c1c1c;
   }
 
 // ==========CUSTOM==========
@@ -12,10 +13,10 @@
           color: $color;
           text-decoration: $text-decoration;
        }
-  }
+}
 
-  @mixin flex-inline {
+@mixin flex-inline {
     display: flex;
     justify-content: space-between;
     align-items: center;
-  }
+}
