@@ -48,13 +48,6 @@
         padding: 40px 0;
     }
 
-    a {
-        @include a-custom(underline, inherit);
-        display: flex;
-        justify-content: center;
-        padding: 0 5px;
-    }
-
     .list-inline {
         ul {
             justify-content: space-between;

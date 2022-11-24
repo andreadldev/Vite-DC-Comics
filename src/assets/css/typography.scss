@@ -2,11 +2,14 @@
     font-family: 'Open Sans', sans-serif;
 }
 
+li {
+    list-style: none;
+}
+
 .list-inline { 
     ul {
     display: flex;
         li {
-            list-style: none;
             margin: 0 10px;
         }
     }
@@ -15,9 +18,29 @@
 header {
     font-weight: 600;
     color: var(--custom-gray);
+    a {
+        @include a-custom(none, var(--custom-blue));
+        display: flex;
+        justify-content: center;
+    }
 }
 
 main {
     font-weight: 600;
     color: white;
+    a {
+        @include a-custom(underline, inherit);
+        display: flex;
+        justify-content: center;
+        padding: 0 5px;
+    }
+}
+
+footer {
+    color: white;
+    a {
+        @include a-custom(underline, grey);
+        font-size: 0.75rem;
+        color: gray;
+    }
 }
