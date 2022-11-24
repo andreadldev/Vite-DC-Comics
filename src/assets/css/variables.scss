@@ -1,0 +1,21 @@
+// ==========COLORS==========
+:root {
+    --custom-blue: #0282f9;
+    --custom-gray: #464646;
+  }
+
+// ==========CUSTOM==========
+@mixin a-custom($text-decoration: none, $color: inherit) {
+    color: inherit;
+    text-decoration: none;
+       &:hover {
+          color: $color;
+          text-decoration: $text-decoration;
+       }
+  }
+
+  @mixin flex-inline {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
