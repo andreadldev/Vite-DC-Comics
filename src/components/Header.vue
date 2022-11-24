@@ -38,12 +38,6 @@
         width: 80px;
     }
 
-    a {
-        @include a-custom(none, var(--custom-blue));
-        display: flex;
-        justify-content: center;
-    }
-
     a:hover:before {
         content: "";
         display: block;

@@ -44,3 +44,11 @@ footer {
         color: gray;
     }
 }
+
+.footer-bottom {
+    a {
+        @include a-custom(underline, white);
+        font-size: 1rem;
+        color: white;
+    }
+}

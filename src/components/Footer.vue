@@ -53,6 +53,12 @@
                 </div>
             </div>
         </section>
+
+        <section class="footer-bottom">
+            <div class="container">
+                <a href="#">SIGN UP NOW</a>
+            </div>
+        </section>
     </footer>
 </template>
 
@@ -95,5 +101,15 @@
             width: 85%;
             margin: auto;
         }
+    }
+
+    .footer-bottom {
+        background-color: var(--custom-darkgray);
+        position: absolute;
+        height: calc(100% - 760px);
+        width: 100%;
+        @include flex-inline;
+
+        
     }
 </style>
