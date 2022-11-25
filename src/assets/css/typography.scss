@@ -1,54 +1,70 @@
 * {
-    font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 li {
-    list-style: none;
+  list-style: none;
 }
 
-.list-inline { 
-    ul {
+.list-inline {
+  ul {
     display: flex;
-        li {
-            margin: 0 10px;
-        }
+    li {
+      margin: 0 0.625rem;
     }
   }
+}
 
 header {
-    font-weight: 600;
-    color: var(--custom-gray);
-    a {
-        @include a-custom(none, var(--custom-blue));
-        display: flex;
-        justify-content: center;
-    }
+  font-weight: 600;
+  color: var(--custom-gray);
+  a {
+    @include a-custom(none, var(--custom-blue));
+    display: flex;
+    justify-content: center;
+  }
 }
 
 main {
-    font-weight: 600;
-    color: white;
-    a {
-        @include a-custom(underline, inherit);
-        display: flex;
-        justify-content: center;
-        padding: 0 5px;
-    }
+  font-weight: 600;
+  color: white;
+  a {
+    @include a-custom(underline, inherit);
+    display: flex;
+    justify-content: center;
+    padding: 0 5px;
+  }
 }
 
 footer {
-    color: white;
-    a {
-        @include a-custom(underline, grey);
-        font-size: 0.75rem;
-        color: gray;
-    }
-}
+  color: white;
 
-.footer-bottom {
+  h4 {
+    margin: 0.625rem 0;
+  }
+  
+  li {
+    margin: 0.0625rem 0;
+  }
+
+  a {
+    @include a-custom(underline, grey);
+    font-size: 0.75rem;
+    color: gray;
+  }
+
+  .footer-bottom {
     a {
-        @include a-custom(underline, white);
-        font-size: 1rem;
-        color: white;
+      @include a-custom(underline, white);
+      font-weight: 600;
+      font-size: 1rem;
+      padding: 1.25rem;
+      color: white;
     }
+
+    span {
+      color: var(--custom-blue);
+      font-weight: bold;
+    }
+  }
 }

@@ -2,12 +2,15 @@
 @import "./variables.scss";
 @import "./typography.scss";
 
+body {
+  height: 100vh;
+}
+
+#app {
+  min-height: 100%;
+}
+
 .container {
   max-width: 70%;
   margin: auto;
-}
-
-body {
-  height: 100vh;
-  overflow: hidden;
 }
