@@ -20,6 +20,7 @@
                     </div>
                     <span>{{comic.series}}</span>
                 </div>
+                <button>LOAD MORE</button>
             </div>
         </section>
 
@@ -79,7 +80,7 @@
     .card {
         width: calc((100% / 6) - 20px);
         margin: 0 10px;
-        margin-bottom: 50px;
+        margin-bottom: 30px;
         cursor: pointer;
         .img-container {
             overflow: hidden;
@@ -93,6 +94,10 @@
             display: block;
             margin-top: 5px;
         }
+    }
+    button {
+        @include btn-primary(var(--custom-blue), white);
+        margin-bottom: 2.5rem;
     }
 }
 

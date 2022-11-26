@@ -56,7 +56,7 @@
 
         <section class="footer-bottom">
             <div class="container">
-                <a href="#">SIGN-UP NOW</a>
+                <button id="btn-signup">SIGN-UP NOW</button>
                 <div class="btn-container">
                     <span>FOLLOW US</span>
                     <form>
@@ -124,21 +124,19 @@
         border: 1px solid var(--custom-blue);
     }
 
+    #btn-signup {
+        @include btn-secondary;
+        border: 1px solid var(--custom-blue);
+    }
+
     .btn-container {
         display: flex;
         align-items: center;
         * {
             margin: 0 0.3125rem;
         }
-        button {
-            background-color: gray;
-            color: var(--custom-darkgray);
-            border: none;
-            height: 1.875rem;
-            width: 1.875rem;
-            border-radius: 50%;
-            font-size: 1rem;
-            cursor: pointer;
+        form button {
+            @include btn-social(gray, var(--custom-darkgray))
         }
     }
 }

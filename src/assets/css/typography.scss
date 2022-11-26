@@ -54,14 +54,6 @@ footer {
     }
 
     .footer-bottom {
-        a {
-            @include a-custom(underline, white);
-            font-weight: 600;
-            font-size: 1rem;
-            padding: 1.25rem;
-            color: white;
-        }
-
         span {
             color: var(--custom-blue);
             font-weight: bold;
