@@ -69,12 +69,17 @@
 
         @media screen and ( min-width: 768px ) {
             & {
-                width: calc((100% / 4) - 20px);
+                width: calc((100% / 3) - 20px);
             }
         }
         @media screen and ( min-width: 992px ) {
             & {
-                width: calc((100% / 6) - 20px);
+                width: calc((100% / 4) - 20px);
+            }
+        }
+        @media screen and ( min-width: 1320px ) {
+            & {
+            width: calc((100% / 6) - 20px);
             }
         }
         
