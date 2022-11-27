@@ -93,6 +93,7 @@
 
 <style lang="scss" scoped>
 @import "../assets/css/style.scss";
+
 .container {
     @include flex-inline;
 }
