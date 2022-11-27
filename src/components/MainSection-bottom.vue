@@ -49,7 +49,6 @@
     height: auto;
     background-color: var(--custom-blue);
     padding: 2.5rem 0;
-
 }
 
 .list-inline {
