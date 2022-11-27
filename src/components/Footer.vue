@@ -1,52 +1,61 @@
+<script>
+    export default {
+        data() {
+            return {
+                footerLinks: [
+                    {
+                        title: 'DC COMICS',
+                        links: ['Characters', 'Comics', 'Movies', 'TV', 'Games', 'Videos', 'News']
+                    },
+                    {
+                        title: 'SHOP',
+                        links: ['Shop DC', 'Shop DC Collectibles']
+                    },
+                    {
+                        title: 'DC',
+                        links: ['Terms Of Use', 'Privacy Policy', 'Ad Choices', 'Advertising', 'Jobs', 'Subscriptions', 'Talent Workshops', 'CPSC Certificates', 'Ratings', 'Shop Help', 'Contact Us']
+                    },
+                    {
+                        title: 'SITES',
+                        links: ['DC', 'MAD Magazine', 'DC Kids', 'DC Universe', 'DC Power Visa']
+                    },
+                ]
+            }
+        }
+    }
+</script>
+
 <template>
     <footer>
         <section class="footer-top">
             <div class="container">
                 <div class="inner-left">
-                    <div class="col">
-                        <h4>DC COMICS</h4>
-                        <ul>
-                            <li><a href="#">Characters</a></li>
-                            <li><a href="#">Comics</a></li>
-                            <li><a href="#">Movies</a></li>
-                            <li><a href="#">TV</a></li>
-                            <li><a href="#">Games</a></li>
-                            <li><a href="#">Videos</a></li>
-                            <li><a href="#">News</a></li>
-                        </ul>
 
-                        <h4>SHOP</h4>
-                        <ul>
-                            <li><a href="#">Shop DC</a></li>
-                            <li><a href="#">Shop DC Collectibles</a></li>
-                        </ul>
-                    </div>
                     <div class="col">
-                        <h4>DC</h4>
                         <ul>
-                            <li><a href="#">Terms Of Use</a></li>
-                            <li><a href="#">Privacy policy (New)</a></li>
-                            <li><a href="#">Ad Choices</a></li>
-                            <li><a href="#">Advertising</a></li>
-                            <li><a href="#">Jobs</a></li>
-                            <li><a href="#">Subscriptions</a></li>
-                            <li><a href="#">Talent Workshops</a></li>
-                            <li><a href="#">CPSC Certificates</a></li>
-                            <li><a href="#">Ratings</a></li>
-                            <li><a href="#">Shop Help</a></li>
-                            <li><a href="#">Contact Us</a></li>
+                            <h4>{{footerLinks[0].title}}</h4>
+                            <li v-for="link in footerLinks[0].links"><a href="#">{{link}}</a></li>
+                        </ul>
+                        <ul>
+                            <h4>{{footerLinks[1].title}}</h4>
+                            <li v-for="link in footerLinks[1].links"><a href="#">{{link}}</a></li>
                         </ul>
                     </div>
+
                     <div class="col">
-                        <h4>SITES</h4>
                         <ul>
-                            <li><a href="#">DC</a></li>
-                            <li><a href="#">MAD Magazine</a></li>
-                            <li><a href="#">DC Kids</a></li>
-                            <li><a href="#">DC Universe</a></li>
-                            <li><a href="#">DC Power Visa</a></li>
+                            <h4>{{footerLinks[2].title}}</h4>
+                            <li v-for="link in footerLinks[2].links"><a href="#">{{link}}</a></li>
                         </ul>
                     </div>
+
+                    <div class="col">
+                        <ul>
+                            <h4>{{footerLinks[3].title}}</h4>
+                            <li v-for="link in footerLinks[3].links"><a href="#">{{link}}</a></li>
+                        </ul>
+                    </div>
+
                 </div>
                 <div class="inner-right">
                     <img src="../assets/img/dc-logo-bg.png" alt="..." />
@@ -113,6 +122,13 @@
         position: relative;
         img {
             position: absolute;
+            pointer-events: none;
+            opacity: 0.4;
+            @media screen and ( min-width: 1200px ) {
+                & {
+                    opacity: 1;
+                }
+            }
         }
     }
 }
@@ -131,7 +147,14 @@
 
     .btn-container {
         display: flex;
+        flex-direction: column;
         align-items: center;
+        @media screen and ( min-width: 768px ) {
+            & {
+                flex-direction: row;
+            }
+            }
+            
         * {
             margin: 0 0.3125rem;
         }

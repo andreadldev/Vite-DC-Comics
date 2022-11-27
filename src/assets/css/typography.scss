@@ -37,6 +37,7 @@ main {
 }
 
 footer {
+    font-weight: 400;
     color: white;
 
     h4 {
@@ -49,14 +50,15 @@ footer {
 
     a {
         @include a-custom(underline, grey);
+        font-weight: 500;
         font-size: 0.75rem;
         color: gray;
     }
 
     .footer-bottom {
         span {
-            color: var(--custom-blue);
             font-weight: bold;
+            color: var(--custom-blue);
         }
     }
 }
